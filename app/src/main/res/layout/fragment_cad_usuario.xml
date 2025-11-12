@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:text="Perfil" />
             <Spinner
-                android:id="@+id/spGrupo"
+                android:id="@+id/spPerfis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/perfis" />
