@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CadUsuarioFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome" />
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textViewMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e-mail" />
+            <EditText
+                android:id="@+id/etMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+            <TextView
+                android:id="@+id/textViewSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="e-mail" />
+            <EditText
+                android:id="@+id/etSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+            <TextView
+                android:id="@+id/textViewSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+            <RadioGroup
+                android:id="@+id/rgSexo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        <RadioButton
+                            android:id="@+id/radioButtonMas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Masculino" />
+                        <RadioButton
+                            android:id="@+id/radioButtonFem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Feminino" />
+                        <RadioButton
+                            android:id="@+id/radioButtonOutro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Outro" />
+                    </TableRow>
+                </TableLayout>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textViewPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfil" />
+            <Spinner
+                android:id="@+id/spGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/perfis" />
+
+            <TextView
+                android:id="@+id/textViewNasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Nascimento" />
+            <CalendarView
+                android:id="@+id/cvDataNasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cbAceite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceito os termos ...." />
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
